@@ -146,8 +146,8 @@
           },
           {
             "position": {
-              "x": 820,
-              "y": 650
+              "x": 870,
+              "y": 590
             },
             "size": {
               "width": 100,
@@ -263,8 +263,8 @@
           },
           {
             "position": {
-              "x": 1153,
-              "y": 660
+              "x": 1115,
+              "y": 590
             },
             "size": {
               "width": 112.5,
@@ -380,8 +380,8 @@
           },
           {
             "position": {
-              "x": 780,
-              "y": 970
+              "x": 820,
+              "y": 930
             },
             "size": {
               "width": 120,
@@ -628,8 +628,8 @@
           },
           {
             "position": {
-              "x": 1350,
-              "y": 860
+              "x": 1380,
+              "y": 850
             },
             "size": {
               "width": 120,
@@ -796,8 +796,8 @@
             },
             "vertices": [
               {
-                "x": 1000,
-                "y": 750
+                "x": 1020,
+                "y": 780
               }
             ]
           },
@@ -847,7 +847,7 @@
             },
             "vertices": [
               {
-                "x": 940,
+                "x": 950,
                 "y": 810
               }
             ]
@@ -949,8 +949,8 @@
             },
             "vertices": [
               {
-                "x": 1120,
-                "y": 750
+                "x": 1090,
+                "y": 760
               }
             ]
           },
@@ -1005,6 +1005,180 @@
               "cell": "f4af54a1-6325-41f3-9c03-181949f080ca",
               "port": "1f8fe7b7-5ad6-4c23-9056-ecb66e92eb58"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resultado web\nApp Query",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Resultado web\nApp Query"
+            ],
+            "id": "c26a415c-35d1-4f25-abda-86557fe18bdf",
+            "source": {
+              "cell": "dfb0f69d-8258-4875-bfad-e2905898e744",
+              "port": "9d6d90aa-1069-4102-89ca-6d064b84dda3"
+            },
+            "target": {
+              "cell": "939bdac5-c381-4ad4-8a7d-b0ccd7ebdbd3",
+              "port": "061ba7b8-720a-48e2-974b-aa574b32f4c3"
+            },
+            "vertices": [
+              {
+                "x": 1340,
+                "y": 840
+              },
+              {
+                "x": 1240,
+                "y": 840
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Queries",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Queries"
+            ],
+            "id": "921eb1cd-aa66-45c3-bf73-97b54e7c8836",
+            "source": {
+              "cell": "939bdac5-c381-4ad4-8a7d-b0ccd7ebdbd3",
+              "port": "061ba7b8-720a-48e2-974b-aa574b32f4c3"
+            },
+            "target": {
+              "cell": "dfb0f69d-8258-4875-bfad-e2905898e744",
+              "port": "9d6d90aa-1069-4102-89ca-6d064b84dda3"
+            },
+            "vertices": [
+              {
+                "x": 1230,
+                "y": 940
+              },
+              {
+                "x": 1340,
+                "y": 940
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Límite\nWeb server / DB",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Límite\nWeb server / DB"
+            ],
+            "id": "1553dc60-9bfc-4352-9934-67f40b805e59",
+            "source": {
+              "x": 1350,
+              "y": 750
+            },
+            "target": {
+              "x": 1370,
+              "y": 1000
+            },
+            "vertices": [
+              {
+                "x": 1310,
+                "y": 900
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Límite Usuario/\nWeb server",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Límite Usuario/\nWeb server"
+            ],
+            "id": "bf939266-737e-4358-b9b6-05db33901029",
+            "source": {
+              "x": 790,
+              "y": 670
+            },
+            "target": {
+              "x": 1290,
+              "y": 670
+            },
+            "vertices": [
+              {
+                "x": 1060,
+                "y": 690
+              }
+            ]
           }
         ]
       },
