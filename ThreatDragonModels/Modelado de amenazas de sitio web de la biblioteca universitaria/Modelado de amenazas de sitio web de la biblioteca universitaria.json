@@ -45,6 +45,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -128,7 +129,6 @@
               ]
             },
             "id": "939bdac5-c381-4ad4-8a7d-b0ccd7ebdbd3",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Sitio web\nbiblioteca",
@@ -158,13 +158,14 @@
                 "text": "Usuarios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -248,17 +249,34 @@
               ]
             },
             "id": "9cdddcf7-e01a-412b-92ee-88173252e600",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
-              "description": "",
+              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de inicio de sesión válidas.\n(3) Usuario con credenciales de inicio de sesión no válidas.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7d502406-fbf5-4c6b-978d-27030acae36f",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -282,6 +300,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -365,7 +384,6 @@
               ]
             },
             "id": "ccaae6ca-7418-49f7-adb2-b9a3d8ca97d6",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
@@ -402,6 +420,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -485,7 +504,6 @@
               ]
             },
             "id": "1f8684ee-b639-47e1-b10e-40ce234dca28",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Páginas web\nen disco",
@@ -526,6 +544,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -609,7 +628,6 @@
               ]
             },
             "id": "f4af54a1-6325-41f3-9c03-181949f080ca",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Web Application\nConfig",
@@ -650,6 +668,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -733,7 +752,6 @@
               ]
             },
             "id": "dfb0f69d-8258-4875-bfad-e2905898e744",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -2212,6 +2230,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Guillermo Vera",
-    "threatTop": 0
+    "threatTop": 4
   }
 }
