@@ -2355,8 +2355,8 @@
                 "text": "Usuarios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2453,12 +2453,26 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": [],
+              "threats": [
+                {
+                  "id": "eb8af532-2719-4c62-93cc-0b8f34a3f88b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
                 "spoofing": 1,
-                "repudiation": 0
+                "repudiation": 1
               }
             }
           },
@@ -3386,6 +3400,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "Guillermo Vera",
-    "threatTop": 5
+    "threatTop": 6
   }
 }
