@@ -1529,7 +1529,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Usuarios"
+                "text": "Usuario"
               },
               "body": {
                 "stroke": "#333333",
@@ -1625,14 +1625,32 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Usuarios",
-              "description": "",
+              "name": "Usuario",
+              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de inicio de sesión válidas.\n(3) Usuario con credenciales de inicio de sesión no válidas.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7ff636bd-37a2-451b-88a0-e60705d1082d",
+                  "title": "Suplantación de identidad",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "1"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2573,6 +2591,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Guillermo Vera",
-    "threatTop": 13
+    "threatTop": 14
   }
 }
